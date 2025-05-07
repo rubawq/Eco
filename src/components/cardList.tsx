@@ -1,5 +1,3 @@
-// import React from "react";
-// import CardCom from "./cardComponent";
 
 const products = [{
     title: 'T-shirt',
