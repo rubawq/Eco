@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import CardCom from "../components/card";
-import products from "../components/cardList";
+import products from "../../public/productsData.json"
 
 const ProductsPage = () => {
   return (
