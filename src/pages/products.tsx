@@ -1,6 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import CardCom from "../components/card";
-import products from "../../public/productsData.json"
+import CardCom from "../components/cardComponent/card";
+import products from "../productsData.json";
+
+
 
 const ProductsPage = () => {
   return (
@@ -20,6 +22,7 @@ const ProductsPage = () => {
         {products.map((i, index) => (
           <CardCom
             key={index}
+            id={i.id}
             title={i.title}
             description={i.description}
             price={i.price}

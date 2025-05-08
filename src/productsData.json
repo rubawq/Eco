@@ -1,35 +1,35 @@
  [
   {
-    "id":1 ,
+    "id":"1" ,
     "title": "T-shirt",
     "description": "white T-shirt",
     "price": 10,
     "image": "public/pic/pi1.jpg"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Wallet",
     "description": "A fancy wallet",
     "price": 20,
-    "image": "public/pic/pi1.jpg"
+    "image": "https://images.unsplash.com/photo-1746591948888-7cc1e170c17b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
   {
-    "id": 3,
+    "id": "3",
     "title": "Cup",
     "description": "A tea cup",
     "price": 5,
     "image": "public/pic/pi1.jpg"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "T-shirt",
     "description": "white T-shirt",
     "price": 10,
     "image": "public/pic/pi1.jpg"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Wallet",
     "description": "A fancy wallet",
     "price": 20,
@@ -37,7 +37,7 @@
   },
 
   {
-    "id": 6,
+    "id": "6",
     "title": "Cup",
     "description": "A tea cup",
     "price": 5,
