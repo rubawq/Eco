@@ -3,6 +3,7 @@ import CardCom from "../components/cardComponent/card";
 import products from "../productsData.json";
 
 
+
 const ProductsPage = () => {
   return (
     <div
@@ -21,6 +22,7 @@ const ProductsPage = () => {
         {products.map((i, index) => (
           <CardCom
             key={index}
+            id={i.id}
             title={i.title}
             description={i.description}
             price={i.price}

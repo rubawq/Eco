@@ -1,8 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { cardStyles } from "./card.style";
 import type { CardType } from "./typeCom";
+import { Link } from "react-router-dom";
 
-const CardCom = ({ title, description, price, image }: CardType) => {
+const CardCom = ({id, title, description, price, image }: CardType) => {
   return (
     <div css={cardStyles.card}>
       <img src={image} alt={title} css={cardStyles.image} />
@@ -10,7 +11,9 @@ const CardCom = ({ title, description, price, image }: CardType) => {
       <p>{description}</p>
       <strong>${price}</strong>
       <br/>
+      <Link to={`/product/${id}`}>
       <button css={cardStyles.button}>Add to Cart</button>
+      </Link>
     </div>
   );
 };
