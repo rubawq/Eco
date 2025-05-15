@@ -1,47 +1,46 @@
- [
+[
   {
-    "id":"1" ,
-    "title": "T-shirt",
-    "description": "white T-shirt",
-    "price": 10,
-    "image": "public/pic/pi1.jpg"
+    "id": "1",
+    "title": "Pearl Necklace",
+    "description": "Elegant white pearl necklace",
+    "price": 120,
+    "image": "/pic/nicless1.webp"
   },
   {
     "id": "2",
-    "title": "Wallet",
-    "description": "A fancy wallet",
-    "price": 20,
-    "image": "https://images.unsplash.com/photo-1746591948888-7cc1e170c17b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "title": "Layered Necklace",
+    "description": "Silver layered necklace with pearl",
+    "price": 145,
+    "image": "/pic/nickesspear.jpg"
   },
 
   {
     "id": "3",
-    "title": "Cup",
-    "description": "A tea cup",
-    "price": 5,
-    "image": "public/pic/pi1.jpg"
+    "title": "Pearl Jewelry Set",
+    "description": "Bracelet and earrings with pearls",
+    "price": 95,
+    "image": "/pic/hh1.jpg"
   },
   {
     "id": "4",
-    "title": "T-shirt",
-    "description": "white T-shirt",
-    "price": 10,
-    "image": "public/pic/pi1.jpg"
+    "title": "Crystal Hoops",
+    "description": "Shiny gold hoop earrings",
+    "price": 60,
+    "image": "/pic/earing3.jpg"
   },
   {
     "id": "5",
-    "title": "Wallet",
-    "description": "A fancy wallet",
-    "price": 20,
-    "image": "public/pic/pi1.jpg"
+    "title": "Pearl Drop Earrings",
+    "description": "Elegant Gold pearl earrings",
+    "price": 85,
+    "image": "/pic/earing2.webp"
   },
 
   {
     "id": "6",
-    "title": "Cup",
-    "description": "A tea cup",
-    "price": 5,
-    "image": "public/pic/pi1.jpg"
+    "title": "Gold Twist Hoops",
+    "description": "Minimal gold twisted hoops",
+    "price": 70,
+    "image": "/pic/earing1.jpg"
   }
 ]
-
