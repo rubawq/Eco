@@ -7,11 +7,29 @@ import { useState } from "react";
 import { ProductDetailsStyle } from "./productDetailsStyle";
 import Quantity from "../../components/quantity/quantity.tsx";
 import Navbar from "../../components/navbar/navbar.tsx";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../state/cart/cartSlice";
 
 const ProductPage = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
   const [selectedSize, setSelectedSize] = useState("");
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+  if (!product) return;
+
+  dispatch(
+    addToCart({
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      image: product.image,
+      quantity: 1,
+      description: product.description,
+    })
+  );
+};
 
   return (
     <>
@@ -32,7 +50,7 @@ const ProductPage = () => {
         />
         <Quantity />
         <Link to="/cart">
-        <button css={ProductDetailsStyle.button}>Add to Cart</button>
+        <button css={ProductDetailsStyle.button} onClick={handleAddToCart}>Add to Cart</button>
         </Link>
         <p css={ProductDetailsStyle.extraInfo}>🚚 Free delivery</p>
         <p css={ProductDetailsStyle.extraInfo}>➕ Free returns</p><div>

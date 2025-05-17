@@ -16,7 +16,7 @@ return (
       <strong>${price}</strong>
       <br/>
       <Link to="/cart">
-      <button css={cardStyles.button}>Add to Cart</button>
+      <button css={cardStyles.button} >Add to Cart</button>
       </Link>
     </div>
     </Link>
