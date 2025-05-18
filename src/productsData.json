@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "title": "Pearl Necklace",
+    "description": "Elegant white pearl necklace",
+    "price": 120,
+    "image": "/pic/nicless1.webp"
+  },
+  {
+    "id": "2",
+    "title": "Layered Necklace",
+    "description": "Silver layered necklace with pearl",
+    "price": 145,
+    "image": "/pic/nickesspear.jpg"
+  },
+
+  {
+    "id": "3",
+    "title": "Pearl Jewelry Set",
+    "description": "Bracelet and earrings with pearls",
+    "price": 95,
+    "image": "/pic/hh1.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Crystal Hoops",
+    "description": "Shiny gold hoop earrings",
+    "price": 60,
+    "image": "/pic/earing3.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Pearl Drop Earrings",
+    "description": "Elegant Gold pearl earrings",
+    "price": 85,
+    "image": "/pic/earing2.webp"
+  },
+
+  {
+    "id": "6",
+    "title": "Gold Twist Hoops",
+    "description": "Minimal gold twisted hoops",
+    "price": 70,
+    "image": "/pic/earing1.jpg"
+  }
+]
