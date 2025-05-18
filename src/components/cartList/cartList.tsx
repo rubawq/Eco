@@ -2,9 +2,17 @@
 
 import type { CartListProps } from "./cartListType";
 import { CartListStyle } from "./cartListStyle";
+import { useDispatch } from "react-redux";
+import { removeFromCart } from "../../state/slices/cartSlice";
 
 
-const CartList =({title, description, price,image }:CartListProps)=>{
+const CartList =({id,title, description, price,image }:CartListProps)=>{
+  const dispatch = useDispatch();
+
+
+  const handleRemoveFromCart = () => {
+    dispatch(removeFromCart(id));
+  };
     return (
         
           <div css={CartListStyle.cardRow}  >
@@ -15,7 +23,7 @@ const CartList =({title, description, price,image }:CartListProps)=>{
             <strong css={CartListStyle.price}>${price}</strong>
             <p>QTY:</p>
             <p>SIZE:</p>
-            <button css={CartListStyle.cancel}>×</button>
+            <button css={CartListStyle.cancel} onClick={handleRemoveFromCart}>×</button>
             <br/>
             </div>
           </div>

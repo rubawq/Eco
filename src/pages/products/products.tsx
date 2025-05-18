@@ -12,6 +12,7 @@ const ProductsPage = () => {
   return (
     <>
     <Navbar/>
+    
     <div>
       
       <ProductImage src="/pic/banner3.png" alt="banner" variant="banner"/>
