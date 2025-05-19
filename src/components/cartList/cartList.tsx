@@ -7,6 +7,8 @@ import { removeFromCart } from "../../state/slices/cartSlice";
 import { toast } from "react-toastify";
 
 
+
+//redux
 const CartList =({id,title, description, price,image, quantity}:CartListProps)=>{
   const dispatch = useDispatch();
 
@@ -18,6 +20,7 @@ const CartList =({id,title, description, price,image, quantity}:CartListProps)=>
       autoClose:2000,
     })
   };
+  
     return (
         
           <div css={CartListStyle.cardRow}  >

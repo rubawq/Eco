@@ -1,5 +1,5 @@
 
-export const getProducts = async()=>{
+export const getProduct = async()=>{
 try{
 const response = await fetch("https://fakestoreapi.com/products");
 if(!response.ok) throw new Error("faild to fetch");
