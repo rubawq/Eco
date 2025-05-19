@@ -5,6 +5,7 @@ import CardCom from "../../components/card/card";
 import Navbar from "../../components/navbar/navbar";
 import ProductImage from "../../components/prodImage/productImage";
 import { ProductsStyle } from "./productsStyle";
+import axios from "axios";
 
 type Product = {
   id: string;
@@ -18,9 +19,8 @@ const ProductsPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
+    axios.get("https://fakestoreapi.com/products")
+      .then((res) => setProducts(res.data))
       .catch(() => console.error("Failed to load products"));
   }, []);
 

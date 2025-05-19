@@ -9,6 +9,7 @@ import Navbar from "../../components/navbar/navbar.tsx";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../state/slices/cartSlice.ts";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -20,9 +21,8 @@ const ProductPage = () => {
 
   // Fetch product from API by ID
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`)
-      .then((res) => res.json())
-      .then((data) => setProduct(data))
+    axios.get(`https://fakestoreapi.com/products/${id}`)
+      .then((res) => setProduct(res.data))
       .catch(() => toast.error("Failed to load product 😢"));
   }, [id]);
 
