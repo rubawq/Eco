@@ -33,6 +33,7 @@ export const navbarStyles = {
     letterSpacing: "2px",
     textTransform: "uppercase",
     color: "#000",
+    textDecoration:"none",
   }),
   right: css({
     display: "flex",

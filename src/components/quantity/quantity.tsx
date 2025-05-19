@@ -1,35 +1,39 @@
 /** @jsxImportSource @emotion/react */
-import { useState } from "react";
 import { QuantityStyle } from "./quantity";
 
-const Quantity = () => {
-  const [quantity, setQuantity] = useState(1);
+type QuantityProps = {
+  value: number;
+  onChange: (newQuantity: number) => void;
+};
 
-const increment = () => {
-    if (quantity < 10) {
-      setQuantity(quantity + 1);
+const Quantity = ({ value, onChange }: QuantityProps) => {
+  const increment = () => {
+    if (value < 10) {
+      onChange(value + 1);
     }
   };
 
-const decrement =() =>{
-   
-    setQuantity(quantity - 1);
+  const decrement = () => {
+    if (value > 1) {
+      onChange(value - 1);
+    }
+  };
 
-};
-
-return(
+  return (
     <>
-    <br/>
-        <label>Quantity </label>
-        <div css={QuantityStyle.container}>
-    <button onClick={decrement} css={QuantityStyle.button}>-</button>
-    <div css={QuantityStyle.value}>{quantity}</div>
-    <button onClick={increment} css={QuantityStyle.button}>+</button>
-</div></>
-    );
-
+      <br />
+      <label>Quantity </label>
+      <div css={QuantityStyle.container}>
+        <button onClick={decrement} css={QuantityStyle.button}>
+          –
+        </button>
+        <div css={QuantityStyle.value}>{value}</div>
+        <button onClick={increment} css={QuantityStyle.button}>
+          +
+        </button>
+      </div>
+    </>
+  );
 };
-
-    
 
 export default Quantity;

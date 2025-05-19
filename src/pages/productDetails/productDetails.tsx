@@ -9,16 +9,22 @@ import Quantity from "../../components/quantity/quantity.tsx";
 import Navbar from "../../components/navbar/navbar.tsx";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../state/slices/cartSlice.ts";
+import { toast } from "react-toastify";
+
+
+
 
 
 const ProductPage = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
+  const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("");
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
   if (!product) return;
+  toast.success("Item added!")
 
   dispatch(
     addToCart({
@@ -26,7 +32,7 @@ const ProductPage = () => {
       title: product.title,
       price: product.price,
       image: product.image,
-      quantity: 1,
+      quantity,
       description: product.description,
     })
   );
@@ -52,7 +58,7 @@ const navigate= useNavigate();
           sizes={["S","M","L"]}
           onChange={(size) => setSelectedSize(size)}
         />
-        <Quantity />
+        <Quantity value={quantity} onChange={setQuantity}/>
         <Link to="/cart">
         <button css={ProductDetailsStyle.button} onClick={handleAddToCart}>Add to Cart</button>
         </Link>

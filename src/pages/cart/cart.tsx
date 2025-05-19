@@ -34,6 +34,8 @@ const CartPage = () => {
             description={i.description}
             image={i.image}
             price={i.price}
+            quantity={i.quantity} 
+            
           />
         ))}
       </div>

@@ -4,5 +4,6 @@ export type CartListProps = {
     description: string;
     price: number;
     image: string;
+      quantity: number;
   } & React.HTMLAttributes<HTMLDivElement>;
 
