@@ -7,19 +7,22 @@ import { Link } from "react-router-dom";
 const CardCom = ({ id,title, description, price, image , ...rest}: CardType) => {
 
 return (
-  <div {...rest}>
-<Link to={`/product/${id}`}  css={cardStyles.link}>
-    <div css={cardStyles.cardColumn}  >
+  <div {...rest} css={cardStyles.cardColumn}>
+<Link to={`/product/${id}`} css={cardStyles.link} >
+
+  
       <img src={image} alt={title} css={cardStyles.image} />
       <h3>{title}</h3>
       <p>{description}</p>
       <strong>${price}</strong>
-      <br/>
-      <Link to="/cart">
-      <button css={cardStyles.button} >Add to Cart</button>
       </Link>
-    </div>
+       <div css={{marginTop:'1rem', alignItems:'10rem'}}>
+      <Link to="/cart" >
+      <button css={cardStyles.button} >Add to Cart</button>
+      
+    
     </Link>
+    </div>
     </div>
   );
 };
